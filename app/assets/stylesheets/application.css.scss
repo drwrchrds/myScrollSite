@@ -12,6 +12,7 @@
  *= require_tree .
  */
 //
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,800);
 
 body, html {
@@ -22,17 +23,196 @@ body, html {
 
 }
 
-.slide {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
+//.slide {
+//  display: table;
+//  table-layout: fixed;
+//  width: 100%;
+//}
+//
+//.story {
+//  margin: -150px auto 0 auto;
+//  width: 400px;
+//  margin-left: auto;
+//  margin-right: auto;
+////  margin-top: 100px;
+//  text-align: center;
+//}
+
+//#slide1 {
+//	background-image: url('http://placekitten.com/2016/1024');
+//}
+
+//.slide {
+//
+//}
+
+// my custom code:
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
 }
 
-.story {
-  margin: -150px auto 0 auto;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-//  margin-top: 100px;
-  text-align: center;
+.catContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.catContainer .catPic {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: 0;
+	background-size: cover;
+	left: 50%;
+	top: 50%;
+}
+
+.catContent {
+	max-width: 700px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+	.catContent h2  {
+		color: #fff8de;
+//		background-color: rgba(0,0,0,0.5);
+		padding: 10px 5px;
+		font-size: 35px;
+		line-height: 38px;
+		margin-bottom: 12px;
+	}
+	.catContent p {
+		width: 400px;
+		color: #b2b2b2;
+	}
+	.catContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+
+/* Slide 1 */
+#cat-slide-1 .bcg {background-image: image-url('clouds/clouds1.jpg')}
+#cat-slide-1 .catContent {
+	bottom: 200px; // says where to position the content div
+	top: auto; // what does top: auto do?
+}
+
+#cat1 {
+	background-image: image-url('cats/cat1.jpg');
+	bottom: 100px; // says where to position the content div
+	top: auto;
+}
+
+#cat2 {
+	background-image: image-url('cats/cat2.jpg');
+	bottom: 200px; // says where to position the content div
+	left: 25%;
+	top: auto;
+}
+
+/* Slide 2 */
+#cat-slide-2 .bcg {background-image: image-url('clouds/clouds2.jpg')}
+#cat-slide-2 .catContent {
+	margin-left: -450px;
+	top: auto;
+}
+#cat-slide-2 h2 {
+	position: fixed;
+	top: 70%;
+}
+
+#cat3 {
+	background-image: image-url('cats/cat3.jpg');
+	position: fixed;
+	top: 70%;
+}
+
+#cat4 {
+	background-image: image-url('cats/cat4.jpg');
+	position: fixed;
+	top: 40%;
+}
+
+/* Slide 3 */
+#cat-slide-3 .bcg {background-image: image-url('clouds/clouds3.jpg')}
+#cat-slide-3 .catContent {
+	margin-left: -239px;
+}
+#cat-slide-3 h2 {
+	color: #f2ead6;
+}
+
+/* Slide 4 */
+#cat-slide-4 .bcg {background-image: image-url('clouds/clouds4.jpg')}
+#cat-slide-4 .catContent {
+	margin-left: -450px;
+	position: fixed;
+	top: 250px;
+}
+#cat-slide-4 h2 {
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+#cat5 {
+	background-image: image-url('cats/cat5.jpg');
+	position: fixed;
+
+	left: 30%;
+	top: 70%;
+}
+
+#cat6 {
+	background-image: image-url('cats/cat6.jpg');
+	position: fixed;
+	left: 64%;
+	top: 40%;
+}
+
+/* Slide 5 */
+#cat-slide-5 .bcg {background-image: image-url('clouds/clouds5.jpg')}
+#cat-slide-5 .catContent {
+	bottom: 200px;
+	top: auto;
+}
+
+/* Slide 6 */
+#cat-slide-6 .bcg {background-image: image-url('clouds/clouds6.jpg')}
+#cat-slide-6 .catContent {
+	margin-left: -450px;
+	top: auto;
+}
+#cat-slide-6 h2 {
+	position: fixed;
+	top: 70%;
+}
+
+/* Slide 7 */
+#cat-slide-7 .bcg {background-image: image-url('clouds/clouds7.jpg')}
+#cat-slide-7 .catContent {
+	margin-left: -239px;
+}
+#cat-slide-7 h2 {
+	color: #f2ead6;
+
+}
+
+/* Slide 8 */
+#cat-slide-8 .bcg {background-image: image-url('clouds/clouds8.jpg')}
+#cat-slide-8 .catContent {
+	margin-left: -450px;
+	position: fixed;
+	top: 250px;
+}
+#cat-slide-8 h2 {
+	background: none;
+	padding-left: 0;
+	padding-right: 0;
 }
